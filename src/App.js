@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import CatFact from "./pages/CatFact";
+import {Route, Routes} from 'react-router-dom'
+import AlertDismissibleExample from './components/Alerts'
+import Adoption from "./pages/Adoption";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AlertDismissibleExample />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/catfact/:parameter" element={<CatFact />} />
+        <Route path = "/adoption" element = {<Adoption/>}/>
+      </Routes>
     </div>
   );
 }
