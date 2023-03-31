@@ -25,7 +25,6 @@ useEffect(() => {
   // useEffect(() => {
   //   getCatFact();
   // }, []);
-
   return (
     <div>
       <h1 className='cat-fact'>Cat Fact</h1>

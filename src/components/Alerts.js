@@ -10,7 +10,9 @@ function AlertCats() {
       <Alert variant="primary" onClose={() => setShow(false)} dismissible>
         <Alert.Heading>Oh snap! You like cats!</Alert.Heading>
         <p>
-          Dont forget to donate to  <a href = "https://www.paypal.com/paypalme/animalproject" target = "_blank" rel="noreferrer" >Animal Project NYC</a>
+          Find a furry friend in Adoption
+          <hr />
+          Donate to <a href = "https://www.paypal.com/paypalme/animalproject" target = "_blank" rel="noreferrer" >Animal Project NYC</a>
         </p>
       </Alert>
     );

@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: rgb(240, 238, 232);
   font-family:Georgia, Times, 'Times New Roman', serif;
   transition-timing-function: ease;
 }
@@ -9,7 +8,7 @@
   display: flex;
   text-align: center;
   color: white;
-  background-color: rgb(240, 184, 123);
+  background-color: rgba(173, 171, 170, 0.806);
   font-size: 30px;
   justify-content: space-around;
   padding: 40px;
@@ -22,16 +21,33 @@ font-size: 30px;
 text-decoration: none;
 }
 
+.nav-choice:hover {
+  color:rgb(14, 13, 11)
+}
+
 a {
   text-decoration: none;
 }
+.link {
+  text-decoration: none;
+  color: rgb(103, 99, 99);
+}
+
+.link:hover{
+  color: rgb(14, 13, 11);
+  border: 3px rgb(255, 255, 255) solid;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: white;
+}
 
 .cat-fact {
-  background-color: bisque;
+  background-color: rgb(245, 235, 222);
   color: rgb(54, 41, 41);
   padding: 15px;
   margin: 15px;
   border-radius: 5px;
+  font-size: 25px;
 }
 
 img {
@@ -40,17 +56,15 @@ img {
 }
 
 .home {
-  background-color: bisque;
+  background-color: rgb(245, 235, 222);
   color: rgb(54, 41, 41);
   padding: 15px;
   margin: 15px;
   border-radius: 5px;
 }
 
-a {
-  color: rgb(175, 99, 13);
-  text-decoration: none;
-}
+
+
 
 ul {
   display: flex;
@@ -64,12 +78,6 @@ ul {
 
 }
 
-
-a:hover{
-  color: rgb(102, 72, 16);
-  text-decoration: dashed black;
-}
-
 .adopt-title {
   padding: 10px;
   margin: 10px;
@@ -78,4 +86,8 @@ a:hover{
   padding: 15px;
   margin: 15px;
   border-radius: 5px;
+}
+
+.link {
+  font-size: 20px;
 }
